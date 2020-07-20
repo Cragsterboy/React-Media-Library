@@ -94,6 +94,7 @@ const FileLibrary: React.FC<FileLibraryProps> = (props: FileLibraryProps): JSX.E
 
 	return (
 		<React.Fragment>
+			<Row className="py-3"><input type="text" placeholder="search.." onChange={e=> props.fileSearch(e.target.value)} /></Row>
 			<Row className="py-3">
 				{renderList()}
 			</Row>
