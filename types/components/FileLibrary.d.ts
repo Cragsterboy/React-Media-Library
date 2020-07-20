@@ -18,5 +18,6 @@ export interface FileLibraryProps {
 	sortAscending?: boolean;
 	fileSelectCallback: (item: FileLibraryListItem) => void;
 	fileDeleteCallback?: (item: FileLibraryListItem) => void;
+	fileSearch: (data: string) => Promise<boolean>;
 	libraryCardComponent?: React.FC<any>;
 }
